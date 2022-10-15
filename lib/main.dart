@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:pokedex/widgets/poke_icons.dart';
+import 'package:pokedex/widgets/widgets.dart';
+
 
 void main() => runApp(const MyApp());
 
@@ -13,8 +16,10 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Material App Bar'),
         ),
-        body: const Center(
-          child: Text('Hello World'),
+        body: Center(
+          child: Container(
+            
+          ),
         ),
       ),
     );
