@@ -28,29 +28,32 @@ class HomeScreen extends StatelessWidget {
                 child: Row(
                   children: [
                     Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          const Text(
-                            '#001',
-                            style: TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.bold
+                      child: Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            const Text(
+                              '#001',
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.bold
+                              ),
                             ),
-                          ),
-                          const Text(
-                            'Bulbasaur',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 28,
-                              fontWeight: FontWeight.bold
+                            const Text(
+                              'Bulbasaur',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 28,
+                                fontWeight: FontWeight.bold
+                              ),
                             ),
-                          ),
-                          Row(
-                            
-                          )
-                        ],
+                            Row(
+                              
+                            )
+                          ],
+                        ),
                       )
                       
                     ),
