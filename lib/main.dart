@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pokedex/widgets/poke_icons.dart';
 import 'package:pokedex/widgets/widgets.dart';
 
 
@@ -17,14 +18,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Center(
           child: Container(
-            color: Color(0xFF8CB230),
-            height: 100,
-            child: Row(
-              children: [
-                PokeIcons.bug(),
-                Text('Bug')
-              ],
-            ),
+            
           ),
         ),
       ),
