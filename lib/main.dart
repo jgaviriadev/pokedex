@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:pokedex/screens/screens.dart';
+import 'package:pokedex/widgets/widgets.dart';
+import 'package:provider/provider.dart';
+
+import 'providers/pokedex_provider.dart';
+
 
 void main() => runApp(const MyApp());
 
@@ -8,10 +12,19 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Material App',
-      home: Scaffold(
-        body: HomeScreen()
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_)=> PokedexProvider(), lazy: false,),
+      ],
+      child: MaterialApp(
+        title: 'Material App',
+        theme: ThemeData(
+          fontFamily: 'SFPRO',
+          scaffoldBackgroundColor: Colors.white
+        ),
+        home: const Scaffold(
+          body: HomeScreen()
+        ),
       ),
     );
   }
