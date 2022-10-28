@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pokedex/utils/utils.dart';
 import 'package:pokedex/widgets/widgets.dart';
 
 class PokeBadges {
@@ -7,10 +8,7 @@ class PokeBadges {
   static Widget bug() {
     return ElevatedButton.icon(
       onPressed: null,
-      icon: const Icon(
-        PokeIcons.bug,
-        size: 18,
-      ),
+      icon: PokeIcons.bug(),
       style: ElevatedButton.styleFrom(
         disabledBackgroundColor: PokeColor.bug, 
         disabledForegroundColor: Colors.white,
@@ -23,10 +21,7 @@ class PokeBadges {
     return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Dark'),
-      icon: const Icon(
-        PokeIcons.dark,
-        size: 18,
-      ),
+      icon: PokeIcons.dark(),
       style: ElevatedButton.styleFrom(
         disabledBackgroundColor: PokeColor.dark, 
         disabledForegroundColor: Colors.white,
@@ -38,10 +33,7 @@ class PokeBadges {
     return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Dragon'),
-      icon: const Icon(
-        PokeIcons.dragon,
-        size: 18,
-      ),
+      icon: PokeIcons.dragon(),
       style: ElevatedButton.styleFrom(
         disabledBackgroundColor: PokeColor.dragon, 
         disabledForegroundColor: Colors.white,
@@ -53,10 +45,7 @@ class PokeBadges {
     return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Electric'),
-      icon: const Icon(
-        PokeIcons.electric,
-        size: 18,
-      ),
+      icon: PokeIcons.electric(),
       style: ElevatedButton.styleFrom(
         disabledBackgroundColor: PokeColor.electric, 
         disabledForegroundColor: Colors.white,
@@ -68,10 +57,7 @@ class PokeBadges {
     return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Fairy'),
-      icon: const Icon(
-        PokeIcons.fairy,
-        size: 18,
-      ),
+      icon: PokeIcons.fairy(),
       style: ElevatedButton.styleFrom(
         disabledBackgroundColor: PokeColor.fairy, 
         disabledForegroundColor: Colors.white,
@@ -83,10 +69,7 @@ class PokeBadges {
     return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Fighting'),
-      icon: const Icon(
-        PokeIcons.fighting,
-        size: 18,
-      ),
+      icon: PokeIcons.fighting(),
       style: ElevatedButton.styleFrom(
         disabledBackgroundColor: PokeColor.fighting, 
         disabledForegroundColor: Colors.white,
@@ -98,10 +81,7 @@ class PokeBadges {
     return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Fire'),
-      icon: const Icon(
-        PokeIcons.fire,
-        size: 18,
-      ),
+      icon: PokeIcons.fire(),
       style: ElevatedButton.styleFrom(
         disabledBackgroundColor: PokeColor.fire, 
         disabledForegroundColor: Colors.white,
@@ -113,10 +93,7 @@ class PokeBadges {
     return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Flying'),
-      icon: const Icon(
-        PokeIcons.flying,
-        size: 18,
-      ),
+      icon: PokeIcons.flying(),
       style: ElevatedButton.styleFrom(
         disabledBackgroundColor: PokeColor.flying, 
         disabledForegroundColor: Colors.white,
@@ -128,10 +105,7 @@ class PokeBadges {
     return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Ghost'),
-      icon: const Icon(
-        PokeIcons.ghost,
-        size: 18,
-      ),
+      icon: PokeIcons.ghost(),
       style: ElevatedButton.styleFrom(
         disabledBackgroundColor: PokeColor.ghost, 
         disabledForegroundColor: Colors.white,
@@ -143,10 +117,7 @@ class PokeBadges {
     return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Grass'),
-      icon: const Icon(
-        PokeIcons.grass,
-        size: 18,
-      ),
+      icon: PokeIcons.grass(),
       style: ElevatedButton.styleFrom(
         disabledBackgroundColor: PokeColor.grass, 
         disabledForegroundColor: Colors.white,
@@ -158,10 +129,7 @@ class PokeBadges {
     return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Ground'),
-      icon: const Icon(
-        PokeIcons.ground,
-        size: 18,
-      ),
+      icon: PokeIcons.ground(),
       style: ElevatedButton.styleFrom(
         disabledBackgroundColor: PokeColor.ground, 
         disabledForegroundColor: Colors.white,
@@ -173,10 +141,7 @@ class PokeBadges {
     return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Ice'),
-      icon: const Icon(
-        PokeIcons.ice,
-        size: 18,
-      ),
+      icon: PokeIcons.ice(),
       style: ElevatedButton.styleFrom(
         disabledBackgroundColor: PokeColor.ice, 
         disabledForegroundColor: Colors.white,
@@ -188,10 +153,7 @@ class PokeBadges {
     return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Normal'),
-      icon: const Icon(
-        PokeIcons.normal,
-        size: 18,
-      ),
+      icon: PokeIcons.normal(),
       style: ElevatedButton.styleFrom(
         disabledBackgroundColor: PokeColor.normal, 
         disabledForegroundColor: Colors.white,
@@ -203,10 +165,7 @@ class PokeBadges {
     return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Poison'),
-      icon: const Icon(
-        PokeIcons.poison,
-        size: 18,
-      ),
+      icon: PokeIcons.poison(),
       style: ElevatedButton.styleFrom(
         disabledBackgroundColor: PokeColor.poison, 
         disabledForegroundColor: Colors.white,
@@ -218,10 +177,7 @@ class PokeBadges {
     return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Psychic'),
-      icon: const Icon(
-        PokeIcons.psychic,
-        size: 18,
-      ),
+      icon: PokeIcons.psychic(),
       style: ElevatedButton.styleFrom(
         disabledBackgroundColor: PokeColor.psychic, 
         disabledForegroundColor: Colors.white,
@@ -233,10 +189,7 @@ class PokeBadges {
     return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Rock'),
-      icon: const Icon(
-        PokeIcons.rock,
-        size: 18,
-      ),
+      icon: PokeIcons.rock(),
       style: ElevatedButton.styleFrom(
         disabledBackgroundColor: PokeColor.rock, 
         disabledForegroundColor: Colors.white,
@@ -248,10 +201,7 @@ class PokeBadges {
     return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Steel'),
-      icon: const Icon(
-        PokeIcons.steel,
-        size: 18,
-      ),
+      icon: PokeIcons.steel(),
       style: ElevatedButton.styleFrom(
         disabledBackgroundColor: PokeColor.steel, 
         disabledForegroundColor: Colors.white,
@@ -263,10 +213,7 @@ class PokeBadges {
     return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Water'),
-      icon: const Icon(
-        PokeIcons.water,
-        size: 18,
-      ),
+      icon: PokeIcons.water(),
       style: ElevatedButton.styleFrom(
         disabledBackgroundColor: PokeColor.water, 
         disabledForegroundColor: Colors.white,
