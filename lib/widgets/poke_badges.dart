@@ -5,20 +5,22 @@ import 'package:pokedex/widgets/widgets.dart';
 class PokeBadges {
   PokeBadges._();
 
-  static Widget bug() {
-    return ElevatedButton.icon(
-      onPressed: null,
-      icon: PokeIcons.bug(),
-      style: ElevatedButton.styleFrom(
-        disabledBackgroundColor: PokeColor.bug, 
-        disabledForegroundColor: Colors.white,
-      ),
-      label: const Text('Bug'), // <-- Text
-    );
-  }
+  static Widget pokeBadges(String type){
 
-  static Widget dark() {
-    return ElevatedButton.icon(
+  switch(type) { 
+    case 'bug': { 
+      return ElevatedButton.icon(
+        onPressed: null,
+        icon: PokeIcons.bug(),
+        style: ElevatedButton.styleFrom(
+          disabledBackgroundColor: PokeColor.bug, 
+          disabledForegroundColor: Colors.white,
+        ),
+        label: const Text('Bug'), // <-- Text
+      );
+    } 
+    case 'dark': { 
+      return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Dark'),
       icon: PokeIcons.dark(),
@@ -27,10 +29,9 @@ class PokeBadges {
         disabledForegroundColor: Colors.white,
       ),
     );
-  }
-
-  static Widget dragon() {
-    return ElevatedButton.icon(
+    } 
+    case 'dragon': { 
+      return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Dragon'),
       icon: PokeIcons.dragon(),
@@ -39,10 +40,9 @@ class PokeBadges {
         disabledForegroundColor: Colors.white,
       ),
     );
-  }
-
-  static Widget electric() {
-    return ElevatedButton.icon(
+    } 
+    case 'electric': { 
+      return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Electric'),
       icon: PokeIcons.electric(),
@@ -51,10 +51,9 @@ class PokeBadges {
         disabledForegroundColor: Colors.white,
       ),
     );
-  }
-
-  static Widget fairy() {
-    return ElevatedButton.icon(
+    }
+    case 'fairy': { 
+      return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Fairy'),
       icon: PokeIcons.fairy(),
@@ -63,10 +62,9 @@ class PokeBadges {
         disabledForegroundColor: Colors.white,
       ),
     );
-  }
-
-  static Widget fighting() {
-    return ElevatedButton.icon(
+    }
+    case 'fighting': { 
+      return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Fighting'),
       icon: PokeIcons.fighting(),
@@ -75,10 +73,9 @@ class PokeBadges {
         disabledForegroundColor: Colors.white,
       ),
     );
-  }
-
-  static Widget fire() {
-    return ElevatedButton.icon(
+    }    
+    case 'fire': { 
+      return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Fire'),
       icon: PokeIcons.fire(),
@@ -87,10 +84,9 @@ class PokeBadges {
         disabledForegroundColor: Colors.white,
       ),
     );
-  }
-
-  static Widget flying() {
-    return ElevatedButton.icon(
+    }    
+    case 'flying': { 
+      return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Flying'),
       icon: PokeIcons.flying(),
@@ -99,10 +95,9 @@ class PokeBadges {
         disabledForegroundColor: Colors.white,
       ),
     );
-  }
-  
-  static Widget ghost() {
-    return ElevatedButton.icon(
+    }    
+    case 'ghost': { 
+      return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Ghost'),
       icon: PokeIcons.ghost(),
@@ -111,10 +106,9 @@ class PokeBadges {
         disabledForegroundColor: Colors.white,
       ),
     );
-  }
-
-  static Widget grass() {
-    return ElevatedButton.icon(
+    }    
+    case 'grass': { 
+      return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Grass'),
       icon: PokeIcons.grass(),
@@ -123,10 +117,9 @@ class PokeBadges {
         disabledForegroundColor: Colors.white,
       ),
     );
-  }
-
-  static Widget ground() {
-    return ElevatedButton.icon(
+    }    
+    case 'ground': { 
+      return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Ground'),
       icon: PokeIcons.ground(),
@@ -135,10 +128,9 @@ class PokeBadges {
         disabledForegroundColor: Colors.white,
       ),
     );
-  }
-
-  static Widget ice() {
-    return ElevatedButton.icon(
+    }
+    case 'ice': { 
+      return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Ice'),
       icon: PokeIcons.ice(),
@@ -147,10 +139,9 @@ class PokeBadges {
         disabledForegroundColor: Colors.white,
       ),
     );
-  }
-
-  static Widget normal() {
-    return ElevatedButton.icon(
+    }   
+    case 'normal': { 
+      return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Normal'),
       icon: PokeIcons.normal(),
@@ -159,10 +150,9 @@ class PokeBadges {
         disabledForegroundColor: Colors.white,
       ),
     );
-  }
-
-  static Widget poison() {
-    return ElevatedButton.icon(
+    }
+    case 'poison': { 
+      return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Poison'),
       icon: PokeIcons.poison(),
@@ -171,10 +161,9 @@ class PokeBadges {
         disabledForegroundColor: Colors.white,
       ),
     );
-  }
-
-  static Widget psychic() {
-    return ElevatedButton.icon(
+    }
+    case 'psychic': { 
+      return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Psychic'),
       icon: PokeIcons.psychic(),
@@ -183,10 +172,9 @@ class PokeBadges {
         disabledForegroundColor: Colors.white,
       ),
     );
-  }
-
-  static Widget rock() {
-    return ElevatedButton.icon(
+    }
+    case 'rock': { 
+      return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Rock'),
       icon: PokeIcons.rock(),
@@ -195,10 +183,9 @@ class PokeBadges {
         disabledForegroundColor: Colors.white,
       ),
     );
-  }
-
-  static Widget steel() {
-    return ElevatedButton.icon(
+    }
+    case 'steel': { 
+      return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Steel'),
       icon: PokeIcons.steel(),
@@ -207,10 +194,9 @@ class PokeBadges {
         disabledForegroundColor: Colors.white,
       ),
     );
-  }
-
-  static Widget water() {
-    return ElevatedButton.icon(
+    }
+    case 'water': { 
+      return ElevatedButton.icon(
       onPressed: null,
       label: const Text('Water'),
       icon: PokeIcons.water(),
@@ -219,5 +205,12 @@ class PokeBadges {
         disabledForegroundColor: Colors.white,
       ),
     );
+    }  
+    default: { 
+      return Container();
+    }
+
+    } 
   }
+
 }

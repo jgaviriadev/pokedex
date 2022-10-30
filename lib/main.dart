@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_)=> PokedexProvider(), lazy: false,),
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Material App',
         theme: ThemeData(
           fontFamily: 'SFPRO',

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pokedex/models/models.dart';
 import 'package:pokedex/providers/pokedex_provider.dart';
 import 'package:pokedex/utils/utils.dart';
 import 'package:pokedex/widgets/widgets.dart';
@@ -10,7 +11,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final provider = Provider.of<PokedexProvider>(context, listen: false);
+    //final provider = Provider.of<PokedexProvider>(context, listen: false);
     return Stack(
       children: [
         Image.asset(
@@ -68,19 +69,44 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   ),
-                  // ElevatedButton(
-                  //   onPressed: () {
-                  //     provider.getListPokemons();
-                  //   },//context.read<PokedexProvider>().getListPokemons(), 
-                  //   child: Text('BTN'),
-                  // ),
-                  Expanded(
-                    child: ListView.builder(
-                      itemCount: 20,
-                      itemBuilder: (BuildContext context, int index) {
-                        return const PokeCard();
+                  Selector<PokedexProvider, bool>(
+                    selector: (_, v) => v.isLoading,
+                    shouldRebuild: (a, b) => a!= b,
+                    builder: (BuildContext context, bool isLoading, Widget? __) {
+                      if(isLoading){
+                        return const Expanded(
+                          child: SizedBox(
+                            height: 100,
+                            child: Center(
+                              child: CircularProgressIndicator(
+                                color: Colors.amber,
+                              )
+                            ),
+                          )
+                        );
+                      } else {
+                        return Expanded(
+                        child:  Selector<PokedexProvider, List<Pokemon>>(
+                          selector: (_, v) => v.pokemons,
+                          shouldRebuild: (a, b) => a.length != b.length,
+                          builder: (BuildContext context, List<Pokemon> pokemons, Widget? __) {
+                            if(pokemons.isEmpty){
+                              print('estoy aca');
+                              return Container();
+                            }
+                            return ListView.builder(
+                              itemCount: pokemons.length,
+                              itemBuilder: (BuildContext context, int index) {
+                                Pokemon pokemon = pokemons[index];
+                                return PokeCard(pokemon: pokemon,);
+                              }
+                            );
+                          }
+                        ),
+                      );
                       }
-                    ),
+                      
+                    }
                   ),
                 ],
               ),
